@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="theme-color" content="#050505" />
+    <title>Sabor a Mi Isla | Autentica Comida Puertorriquena</title>
+    <meta name="description" content="Menu and contact links for Sabor a Mi Isla food truck." />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 18% 0%, rgba(0, 87, 183, 0.24), transparent 28rem),
+          radial-gradient(circle at 86% 8%, rgba(206, 17, 38, 0.2), transparent 24rem),
+          linear-gradient(180deg, #050505 0%, #111 52%, #050505 100%);
+        color: #fffaf0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      main {
+        min-height: 100vh;
+        padding: 18px 14px 28px;
+      }
+
+      .hero,
+      .actions,
+      .menu,
+      footer {
+        max-width: 880px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 26px 16px 20px;
+        text-align: center;
+        border: 1px solid rgba(238, 185, 72, 0.42);
+        border-radius: 8px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)), #080808;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto;
+        height: 7px;
+        background: linear-gradient(90deg, #ce1126 0 28%, #fff 28% 40%, #0057b7 40% 68%, #fff 68% 80%, #ce1126 80%);
+      }
+
+      .kicker {
+        margin: 0 0 7px;
+        color: #eeb948;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 12vw, 4.35rem);
+        line-height: 0.96;
+      }
+
+      .subtitle {
+        margin: 12px auto 0;
+        color: #f6d98c;
+        font-size: clamp(1rem, 4.8vw, 1.5rem);
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 14px;
+        margin-bottom: 14px;
+      }
+
+      .button {
+        display: flex;
+        min-height: 58px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid rgba(238, 185, 72, 0.55);
+        border-radius: 8px;
+        background: #151515;
+        color: #fff;
+        font-size: 1.08rem;
+        font-weight: 900;
+        text-decoration: none;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 10px 24px rgba(0, 0, 0, 0.24);
+      }
+
+      .button.call {
+        background: linear-gradient(135deg, #eeb948, #a96e00);
+        color: #090909;
+      }
+
+      .button.instagram {
+        border-color: rgba(0, 87, 183, 0.86);
+      }
+
+      .button.facebook {
+        border-color: rgba(206, 17, 38, 0.86);
+      }
+
+      .menu a {
+        display: block;
+        border: 1px solid rgba(238, 185, 72, 0.48);
+        border-radius: 8px;
+        background: #000;
+        box-shadow: 0 22px 70px rgba(0, 0, 0, 0.42);
+      }
+
+      .menu img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 7px;
+      }
+
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 18px;
+        color: #eeb948;
+        font-weight: 900;
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration-color: #ce1126;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+      }
+
+      @media (min-width: 680px) {
+        main {
+          padding: 28px 24px 42px;
+        }
+
+        .actions {
+          grid-template-columns: 1.2fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="kicker">Food Truck</p>
+        <h1>Sabor a Mi Isla 🌺 🇵🇷</h1>
+        <p class="subtitle">Auténtica Comida Puertorriqueña</p>
+      </section>
+
+      <nav class="actions" aria-label="Contact Sabor a Mi Isla">
+        <a class="button call" href="tel:4013281454">📞 Call Now</a>
+        <a class="button instagram" href="https://www.instagram.com/saboramiislari?igsh=MW56Mm1qcWVhYWcwZQ==" target="_blank" rel="noreferrer">📸 Instagram</a>
+        <a class="button facebook" href="https://www.facebook.com/share/18W4Z5Cgoo/?mibextid=wwXIfr" target="_blank" rel="noreferrer">👍 Facebook</a>
+      </nav>
+
+      <section class="menu" aria-label="Sabor a Mi Isla menu">
+        <a href="./menu.png" target="_blank" rel="noreferrer" aria-label="Open menu full size">
+          <img src="./menu.png" alt="Sabor a Mi Isla food truck menu" />
+        </a>
+      </section>
+
+      <footer>
+        <span>Llame Ya!</span>
+        <a href="tel:4013281454">401-328-1454</a>
+      </footer>
+    </main>
+  </body>
+</html>
